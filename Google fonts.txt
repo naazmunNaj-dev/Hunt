@@ -1,0 +1,15 @@
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+.team-member{
+    border: 1px solid #dddd;
+    width: 272px;
+
+    .team-img-overlay
+
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-pinterest-p"></i>
+    <i class="fa-brands fa-behance"></i>
+
+     filter: drop-shadow(2px 3px 3px #cecece);

@@ -1,0 +1,1233 @@
+/* Common css start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 0.8;
+}
+body {
+  overflow-x: hidden;
+}
+
+@font-face {
+  src: url(../myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF);
+  font-family: myriad-regular;
+}
+
+/* ================COMMON CSS END============== */
+
+/* ==================NAVBAR CSS START============ */
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0px;
+  padding-left: 0px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  text-transform: capitalize;
+  position: relative;
+  transition: all linear 0.4s;
+}
+.navbar-expand-lg .navbar-nav .nav-item:last-child .nav-link {
+  padding-right: 0;
+}
+.navbar {
+  padding-top: 40px !important;
+  padding-bottom: 43px !important;
+  border-bottom: 3px solid #71562a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+.navbar-expand-lg .navbar-nav .nav-item {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.navbar-expand-lg .navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -54px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #fec600;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.4s;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: #fec600;
+}
+
+/*==================== NAVBAR CSS END================ */
+/* =================BANNER CSS START ================*/
+
+.banner {
+  background: url(../images/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 246px;
+  padding-bottom: 187px;
+  position: relative;
+  z-index: 1;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0, 0.6);
+  z-index: -1;
+}
+.banner-text h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #ffff;
+}
+.banner-text h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  color: #fec600;
+  padding-top: 22px;
+  padding-bottom: 31px;
+}
+.banner-text p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #f1f1f1;
+  line-height: 24px;
+  width: 568px;
+  padding-bottom: 63px;
+}
+.banner-shape-parent {
+  position: relative;
+}
+.banner-shape {
+  width: 100%;
+  height: 100px;
+  background: #ffffff;
+  transform: skewX(273deg);
+  transform-origin: left bottom;
+  position: absolute;
+  top: -100px;
+  z-index: 999;
+}
+.banner-button button {
+  width: 130px;
+  padding-top: 21px;
+  padding-bottom: 19px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  transition: all linear 0.4s;
+  margin-right: 20px;
+}
+.banner-button button:hover {
+  color: #222222;
+  border-color: #fec600;
+  background-color: #fec600;
+}
+.banner-part {
+  position: relative;
+}
+.left a {
+  position: absolute;
+  top: 360px;
+  left: 59px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #1c1415;
+  line-height: 40px;
+  text-align: center;
+  font-size: 25px;
+}
+.right a {
+  position: absolute;
+  top: 360px;
+  right: 59px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #1c1415;
+  line-height: 40px;
+  text-align: center;
+  font-size: 25px;
+}
+.left a:hover {
+  background-color: #fec600;
+}
+.right a:hover {
+  background-color: #fec600;
+}
+
+/*========== BANNER CSS END========== */
+/*========== ABOUT CSS START========== */
+.common-title h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: #111111;
+  padding-bottom: 25px;
+}
+.common-title p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #353535;
+  line-height: 24px;
+  padding-bottom: 60px;
+}
+.about-top {
+  background: #eeeeee;
+  padding: 40px 35px 70px;
+  position: relative;
+  transition: all linear 0.4s;
+}
+.about-top-text {
+  width: 310px;
+}
+.about-top h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #111111;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+.about-top p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #353535;
+  line-height: 24px;
+}
+.about-top .shape {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #eeeeee;
+  transform: translateX(-50%) rotate(45deg);
+}
+.about-top-parent .circle {
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #353535;
+  transition: all linear 0.3s;
+}
+.about-top-parent {
+  position: relative;
+}
+
+.about-left {
+  background: #eeeeee;
+  padding: 40px 35px 70px;
+  /* position: relative; */
+  transition: all linear 0.4s;
+}
+.about-left-parent .circle {
+  position: absolute;
+  top: 50%;
+  right: -70px;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #353535;
+  transition: all linear 0.4s;
+}
+.about-left-parent {
+  position: relative;
+}
+.about-left h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #111111;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+.about-left p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #353535;
+  line-height: 24px;
+}
+.about-left .shape {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  width: 20px;
+  height: 20px;
+  background-color: #eeeeee;
+  transform: translateX(-50%) rotate(45deg);
+}
+.about-middle {
+  height: 370px;
+  width: 370px;
+  border-radius: 50%;
+  border: 1px solid #595959;
+}
+.about-middle-center {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background-color: #353535;
+  overflow: hidden;
+  position: relative;
+}
+.about-middle-center img {
+  height: 100%;
+  object-fit: cover;
+}
+.about-middle-center::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+.about-right {
+  background: #eeeeee;
+  padding: 40px 35px 70px;
+  position: relative;
+  transition: all linear 0.4s;
+  /* margin-left: 30px; */
+}
+.about-right-parent {
+  position: relative;
+}
+.about-right-parent .circle {
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #353535;
+  transition: all linear 0.4s;
+}
+.about-right h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #111111;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+.about-right p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #353535;
+  line-height: 24px;
+}
+.about-right .shape {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  background-color: #eeeeee;
+  transform: translateX(-50%) rotate(45deg);
+}
+.about-bottom {
+  background: #eeeeee;
+  padding: 40px 35px 70px;
+  position: relative;
+  transition: all linear 0.4s;
+}
+.about-bottom-parent .circle {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #353535;
+  transition: all linear 0.4s;
+}
+.about-bottom h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #111111;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+.about-bottom p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #353535;
+  line-height: 24px;
+}
+.about-bottom .shape {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #eeeeee;
+  transform: translateX(-50%) rotate(45deg);
+}
+.about-bottom-parent {
+  position: relative;
+}
+.about-top-parent:hover .circle {
+  background: #fec600;
+}
+.about-top:hover {
+  filter: drop-shadow(2px 3px 3px #cecece);
+}
+.about-left-parent:hover .circle {
+  background: #fec600;
+}
+.about-left:hover {
+  filter: drop-shadow(2px 3px 3px #cecece);
+}
+.about-right-parent:hover .circle {
+  background: #fec600;
+}
+.about-right:hover {
+  filter: drop-shadow(2px 3px 3px #cecece);
+}
+.about-bottom-parent:hover .circle {
+  background: #fec600;
+}
+.about-bottom:hover {
+  filter: drop-shadow(2px 3px 3px #cecece);
+}
+
+/* ==========ABOUT CSS END========= */
+
+/*========== PORTFOLIO CSS START========== */
+
+#portfolio {
+  background: url(../images/port-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 102px;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: -2;
+  clip-path: polygon(0 8%, 100% 0, 100% 92%, 0% 100%);
+}
+.port-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.8);
+}
+.port-common-title h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: #ffffff;
+  padding-bottom: 25px;
+}
+.port-common-title p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #f1f1f1;
+  line-height: 24px;
+  padding-bottom: 60px;
+}
+
+.port-col-lg-3 .port-img:first-child {
+  margin-bottom: 30px;
+}
+
+/*========== PORTFOLIO CSS END ============*/
+
+/*=============== SERVICE CSS START ============*/
+
+#service-part {
+  padding-bottom: 100px;
+  position: relative;
+}
+.service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.service-left {
+  width: 40%;
+}
+.service-left {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #111111;
+  text-transform: uppercase;
+}
+.service-middle {
+  width: 10%;
+  position: relative;
+}
+.service-right {
+  width: 40%;
+  background-color: #f1f1f1;
+  padding: 55px 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #353535;
+}
+.service-right p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #353535;
+  line-height: 24px;
+}
+.service-img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #eeeeee;
+  line-height: 70px;
+  text-align: center;
+  margin: 0 auto;
+}
+#service-part .slick-slide img {
+  display: inline-block;
+}
+#service-part .slick-slide {
+  margin: 20px 0;
+}
+.service-parent:nth-child(even) .service {
+  flex-direction: row-reverse;
+}
+.service-parent:nth-child(even) .service h4 {
+  text-align: left;
+}
+.service-shape {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 800px;
+  overflow: hidden;
+}
+.service-parent.slick-current .service .service-middle .service-img {
+  transform: scale(1.3);
+  background: #fec600;
+  transition: all linear 0.4s;
+}
+.top {
+  position: absolute;
+  top: 155px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  color: #111111;
+  background-color: #f1f1f1;
+  line-height: 35px;
+  text-align: center;
+}
+.top i {
+  color: #111111;
+}
+.top:hover {
+  background: #fec600;
+}
+.bottom {
+  position: absolute;
+  bottom: 78px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  line-height: 35px;
+  text-align: center;
+}
+.bottom i {
+  color: #111111;
+}
+.bottom:hover {
+  background: #fec600;
+}
+.service-right {
+  position: relative;
+}
+.service-text-shape {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #eeeeee;
+  transform: translateX(-50%) rotate(45deg);
+}
+.service-text-shape-2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -20px;
+  width: 20px;
+  height: 20px;
+  background-color: #eeeeee;
+  transform: translateX(-50%) rotate(45deg);
+}
+/*====================SERVICE CSS END============== */
+
+/* ==================TESTIMONIAL CSS START============ */
+
+#testimonials {
+  padding-top: 25px;
+}
+.test-bg {
+  background: url(../images/test-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 188px;
+  padding-bottom: 194px;
+  position: relative;
+  z-index: 1;
+}
+.test-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(17, 17, 17, 0.8);
+  z-index: -1;
+}
+.image-circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #cccccc;
+  overflow: hidden;
+  margin: 30px auto;
+  position: relative;
+}
+.image-circle img {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#testimonials .slick-slide img {
+  display: inline-block;
+}
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255);
+  opacity: 0.8;
+  z-index: 2;
+}
+#testimonials .slick-slide img {
+  display: inline-block;
+}
+.image-details.slick-current .image-circle {
+  transform: scale(1.3);
+  transition: all linear 0.4s;
+  background-color: #fec600;
+}
+.image-details.slick-current .image-circle .img-overlay {
+  opacity: 0;
+}
+.text-details {
+  padding: 60px 30px 100px 34px;
+  background-color: #f1f1f1;
+}
+.quote {
+  position: absolute;
+  top: 56px;
+  left: 192px;
+  height: 100%;
+  width: 100%;
+}
+.text-test {
+  position: relative;
+}
+.signature {
+  position: absolute;
+  right: 0;
+  bottom: -54px;
+}
+.text-details-shape {
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  transform: translateY(-50%) rotate(45deg);
+}
+.text-details {
+  position: relative;
+}
+.text-details-slider {
+  margin-top: 50px;
+}
+.text-details-slider .slick-list {
+  height: 341px;
+  padding-left: 37px !important;
+}
+.text-test {
+  z-index: 3;
+}
+.up-parent {
+  position: relative;
+}
+.test-line {
+  position: absolute;
+  top: -36px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 2px;
+  z-index: -1;
+}
+.up {
+  position: absolute;
+  top: -72px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 37px;
+  width: 37px;
+  border-radius: 37px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  line-height: 37px;
+  text-align: center;
+  transition: all linear 0.4s;
+}
+.down {
+  position: absolute;
+  bottom: -82px;
+  left: 76px;
+  height: 37px;
+  width: 37px;
+  border-radius: 37px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  line-height: 37px;
+  text-align: center;
+  transition: all linear 0.4s;
+}
+.up:hover {
+  background-color: #fec600;
+  color: #000000;
+}
+.down:hover {
+  background-color: #fec600;
+  color: #000000;
+}
+.text-test h5 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #222222;
+  padding-bottom: 8px;
+}
+.text-test i {
+  color: #fec600;
+}
+.text-test h6 {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: #353535;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.text-test p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #353535;
+  line-height: 24px;
+}
+#testimonials {
+  position: relative;
+}
+.test-shape-up {
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  transform: skewX(273deg);
+  transform-origin: left top;
+  position: absolute;
+  top: 25px;
+  z-index: 999;
+}
+.test-shape-down {
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  transform: skewX(273deg);
+  transform-origin: left bottom;
+  position: absolute;
+  bottom: 0px;
+  z-index: 999;
+}
+/* ======================TESTIMONIAL CSS END===================== */
+
+/* ====================== PRICING CSS START====================== */
+#pricing-part {
+  padding-top: 20px;
+}
+.pricing-name {
+  padding-top: 30px;
+  padding-bottom: 93px;
+  background-color: #353535;
+  clip-path: polygon(0 0, 100% 0, 100% 68%, 0% 100%);
+}
+.pricing-name h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.pricing-text {
+  padding-top: 90px;
+  padding-bottom: 10px;
+}
+.pricing-button {
+  padding-top: 40px;
+  padding-bottom: 25px;
+  background-color: #353535;
+  clip-path: polygon(0 31%, 100% 0, 100% 100%, 0% 100%);
+}
+.pricing-button a {
+  color: #d8d8d8;
+}
+.pricing-text p {
+  padding-bottom: 25px;
+}
+.pricing-circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #5555;
+  background-color: #fff;
+  line-height: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.pricing-details {
+  position: relative;
+  background-color: #f1f1f1;
+}
+.pricing-number {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 1px solid #353535;
+  background-color: #353535;
+}
+.pricing-number h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 29px;
+  color: #fff;
+  padding-top: 22px;
+  padding-bottom: 10px;
+}
+.pricing-number p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+}
+.pricing-details:hover .pricing-name {
+  background-color: #fec600;
+  transition: all linear 0.4s;
+}
+.pricing-details:hover .pricing-name h3 {
+  color: #111111;
+  transition: all linear 0.4s;
+}
+.pricing-details:hover .pricing-circle {
+  border: 1px solid #fec600;
+  transition: all linear 0.4s;
+}
+.pricing-details:hover .pricing-number {
+  border: 1px solid #fec600;
+  background-color: #fec600;
+  transition: all linear 0.4s;
+}
+.pricing-details:hover .pricing-number h3 {
+  color: #222222;
+}
+.pricing-details:hover .pricing-number p {
+  color: #222222;
+  transition: all linear 0.4s;
+}
+.pricing-details:hover .pricing-button {
+  background-color: #fec600;
+  transition: all linear 0.4s;
+}
+.pricing-details:hover .pricing-button a {
+  color: #222222;
+  transition: all linear 0.4s;
+}
+.pricing-bottom {
+  padding-top: 30px;
+  padding-bottom: 28px;
+}
+.pricing-bg {
+  background: url(../images/pricing-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+  z-index: 1;
+  clip-path: polygon(0 30%, 100% 0, 100% 70%, 0% 100%);
+}
+.main-counter h5 {
+  transform: rotate(3deg);
+}
+.main-counter p {
+  transform: rotate(3deg);
+  width: 167px;
+}
+.pricing-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: -1;
+}
+.counter-wrapper {
+  transform: rotate(-3deg);
+}
+.counter-item {
+  height: 117px;
+  width: 209px;
+  border: 1px solid #ffffff;
+  padding: 25px 43px 28px 28px;
+}
+.counter {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  color: #fff;
+}
+.main-counter p {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  padding-top: 23px;
+}
+.main-counter {
+  width: 151px;
+}
+
+/* ====================== PRICING CSS END======================= */
+
+/* ====================== TEAM CSS START======================= */
+#team-part {
+  padding-bottom: 73px;
+  height: 600px;
+}
+.team-img {
+  width: 270px;
+  height: 271px;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0%, 100% 82%, 0% 100%);
+  position: relative;
+}
+.team-member {
+  border: 1px solid #dddd;
+  width: 270px;
+  position: relative;
+  transition: all linear 0.4s;
+  height: 350px;
+}
+.team-text h5 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #111111;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.team-text p {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: #222222;
+  padding-bottom: 24px;
+}
+.team-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(248, 218, 120, 0.5);
+  opacity: 0;
+}
+.icon-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  line-height: 40px;
+  text-align: center;
+}
+.icon-circle a {
+  color: #353535;
+}
+.team-icon {
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  border: 1px solid #353535;
+  background-color: #ffffff;
+  line-height: 33px;
+  text-align: center;
+  font-size: 18px;
+}
+.team-icon a {
+  color: #111111;
+}
+.team-icons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  padding-bottom: 24px;
+}
+.team-member:hover .team-icons {
+  opacity: 1;
+  transition: all linear 0.4s;
+}
+.team-member:hover {
+  border: 1px solid #dddd;
+  width: 270px;
+  height: 405px;
+  transition: all linear 0.4s;
+}
+.team-member:hover .team-img-overlay {
+  opacity: 1;
+  transition: all linear 0.4s;
+}
+.team-icon:hover {
+  background-color: #fec600;
+  border: 1px solid #fec600;
+  transition: all linear 0.4s;
+}
+/* ====================== TEAM CSS END======================= */
+/* ====================== PARTNERS CSS START================== */
+#partners-part {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f1f1f1;
+  clip-path: polygon(0 30%, 100% 0, 100% 70%, 0% 100%);
+}
+.partner-wrappers {
+  transform: rotate(-3deg);
+}
+.partner {
+  height: 120px;
+  width: 210px;
+  border: 1px solid #cdcdcd;
+  text-align: center;
+  line-height: 120px;
+}
+.partner img {
+  transform: rotate(3deg);
+}
+/* ====================== PARTNERS CSS END===================== */
+
+/* ====================== FOOTER CSS START ===================== */
+footer {
+  background: #000;
+}
+.footer-top {
+  padding: 100px 0;
+  /* background-color: #000; */
+  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+  margin-top: -80px;
+  position: relative;
+}
+.footer-top::after {
+  content: "";
+  position: absolute;
+  top: 205px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #505050;
+  z-index: 2;
+  transform: rotate(-3deg);
+}
+.footer-middle {
+  /* background-color: #000; */
+  padding-top: 100px;
+  padding-bottom: 57px;
+}
+.footer-items {
+  width: 23%;
+  position: relative;
+}
+.footer-items::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #555555;
+}
+.footer-items:last-child:after {
+  display: none;
+}
+.footer-icon {
+  height: 35px;
+  width: 35px;
+  background-color: #fec600;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  margin: 0 auto;
+}
+.footer-text p {
+  width: 244px;
+  padding-top: 22px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  line-height: 24px;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer-bottom {
+  padding: 28px;
+  /* background-color: #000; */
+}
+.f-text p {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.f-icons {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+.f-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  line-height: 40px;
+}
+.f-icon a {
+  color: #353535;
+}
+.f-icon:hover {
+  background-color: #fec600;
+  transition: all linear 0.4s;
+}
+
+/* ====================== FOOTER CSS END ===================== */
+/* ====================== COPYRIGHT CSS START ================ */
+
+.copyright-text {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  background-color: #353535;
+  text-align: center;
+}
+.copyright-text p {
+  font-family: myriad-regular;
+  font-size: 13px;
+  color: #f1f1f1;
+}
+.copyright-text p span {
+  font-family: myriad-regular;
+  font-size: 13px;
+  color: #fec600;
+}
+
+/* ====================== COPYRIGHT CSS END ===================== */
